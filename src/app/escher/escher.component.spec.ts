@@ -24,7 +24,7 @@ describe('EscherComponent', () => {
     spyOn(escher, 'Builder').and.returnValue({
       selection: {
         selectAll: () => {
-          return { on: () => { }}
+          return { on: () => { }};
         }
       }
     });
@@ -55,7 +55,7 @@ describe('EscherComponent', () => {
     app.builder = {
       selection: {
         selectAll: () => {
-          return { on: () => { }}
+          return { on: () => { }};
         }
       },
       load_map: () => {},
@@ -82,7 +82,7 @@ describe('EscherComponent', () => {
     app.builder = {
       selection: {
         selectAll: () => {
-          return { on: () => { }}
+          return { on: () => { }};
         }
       },
       load_map: () => {},
@@ -111,7 +111,7 @@ describe('EscherComponent', () => {
     app.builder = {
       selection: {
         selectAll: () => {
-          return { on: () => { }}
+          return { on: () => { }};
         }
       },
       load_map: () => {},
