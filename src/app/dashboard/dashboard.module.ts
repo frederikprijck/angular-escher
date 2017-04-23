@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DashboardRouterModule } from './dashboard.routes';
 import { FileUploadComponent } from './file-upload/file-upload.component';
+import { ThemeSelectorComponent } from './theme-selector/theme-selector.component';
 import { DashboardComponent } from './dashboard.component';
 import { DashboardService } from './dashboard.service';
 import { EscherModule } from './../escher/escher.module';
@@ -14,6 +15,7 @@ import { EscherModule } from './../escher/escher.module';
   ],
   declarations: [
     FileUploadComponent,
+    ThemeSelectorComponent,
     DashboardComponent
   ],
   providers: [

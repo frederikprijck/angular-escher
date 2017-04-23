@@ -4,10 +4,11 @@
   </h1>
 </div>
 
-<div class="dashboard__content">
+<div class="dashboard__content" [ngClass]="themeCssClass$ | async">
   <escher-component [data]="data$ | async" style="height: 600px; width: 80%; display: block;"></escher-component>
 
   <div class="actions">
     <app-file-upload (onSelect)="fileSelected$.next($event)"></app-file-upload>
+    <app-theme-selector (onSelect)="themeSelected$.next($event)"></app-theme-selector>
   </div>
 </div>

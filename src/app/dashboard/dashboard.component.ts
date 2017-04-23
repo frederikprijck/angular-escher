@@ -5,6 +5,7 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/merge';
 import 'rxjs/add/operator/mergeMap';
 import { Subject } from 'rxjs/Subject';
+import { ReplaySubject } from 'rxjs/ReplaySubject';
 
 @Component({
   selector: 'app-dashboard',
@@ -15,7 +16,11 @@ export class DashboardComponent implements OnInit {
   title = 'Dashboard';
 
   data$: any;
+
   fileSelected$: Subject<any> = new Subject<any>();
+  themeSelected$: ReplaySubject<string> = new ReplaySubject<string>();
+  themeCssClass$: Observable<string> = this.themeSelected$
+    .map(theme => theme === 'default' ? '' : 'primary-theme');
 
   constructor(private dashboardService: DashboardService) {}
 
