@@ -1,0 +1,74 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~escher-vis/css/dist/builder.css';
+
+$primary-color: #E94D4F;
+$primary-color-dark: #AD3E3F;
+$light-text-color: #FFF;
+$primary-theme-color: #B6D169;
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    min-height: 100%;
+}
+
+* {
+  box-sizing: inherit;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.button {
+    padding: 5px 10px;
+    background-color: $primary-color;
+    color: $light-text-color;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.button:hover {
+    background-color: $primary-color-dark;
+}
+
+button.button {
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+svg.escher-svg .segment:hover {
+    stroke: $primary-color-dark;
+}
+
+.primary-theme {
+    &.escher-container {
+        background-color: transparent;
+        border: 1px #000 solid;
+    }
+
+    svg.escher-svg .segment {
+        stroke: $primary-theme-color;
+
+        &:hover{
+            stroke: $primary-color-dark;
+        }
+    }
+
+    svg.escher-svg .arrowhead {
+        fill: $primary-theme-color;
+    }
+}
+

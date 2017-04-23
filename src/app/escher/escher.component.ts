@@ -18,7 +18,6 @@ export class EscherComponent implements OnChanges {
 
   ngOnChanges(changesObj) {
     if (changesObj.data && changesObj.data.currentValue && changesObj.data.currentValue !== changesObj.data.previousValue) {
-
       if (this.builder) {
         this.builder.load_map(this.data);
         this.builder.map.draw_everything();

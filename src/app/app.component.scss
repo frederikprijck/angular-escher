@@ -1,26 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
 
-html {
-  height: 100%;
-  box-sizing: border-box;
-}
-
-body {
-    font-family: 'Open Sans', sans-serif;
-    position: relative;
-    min-height: 100%;
-}
-
-* {
-  box-sizing: inherit;
-  font-family: 'Open Sans', sans-serif;
-}
-
-
+$primary-color: #E94D4F;
+$dark-bg-color: #20211F;
+$light-text-color: #FFF;
 
 .header {
-    background-color: #E94D4F;
-    color: #fff;
+    background-color: $primary-color;
+    color: $light-text-color;
     width: 100%;
     text-align: center;
     padding: 10px 0;
@@ -28,8 +14,8 @@ body {
 }
 
 .footer {
-    background-color: #20211f;
-    color: #fff;
+    background-color: $dark-bg-color;
+    color: $light-text-color;
     width: 100%;
     text-align: center;
     padding: 10px 0;
@@ -47,5 +33,5 @@ body {
 }
 
 .footer a:hover {
-  color: #E94D4F;
+  color: $primary-color;
 }

@@ -11,11 +11,9 @@ import { ReplaySubject } from 'rxjs/ReplaySubject';
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.css'],
+  styleUrls: ['./dashboard.component.scss'],
 })
 export class DashboardComponent implements OnInit {
-  title = 'Dashboard';
-
   data$: Observable<any>;
 
   fileSelected$: Subject<any> = new Subject<any>();

@@ -7,7 +7,7 @@ import 'rxjs/add/operator/mergeMap';
 @Component({
   selector: 'app-file-upload',
   templateUrl: './file-upload.component.html',
-  styleUrls: ['./file-upload.component.css'],
+  styleUrls: ['./file-upload.component.scss'],
 })
 export class FileUploadComponent {
 

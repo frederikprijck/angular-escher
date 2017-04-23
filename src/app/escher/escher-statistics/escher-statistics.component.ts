@@ -3,8 +3,7 @@ import { EscherService } from './../escher.service';
 
 @Component({
   selector: 'escher-statistics',
-  templateUrl: './escher-statistics.component.html',
-  styleUrls: ['./escher-statistics.component.css'],
+  templateUrl: './escher-statistics.component.html'
 })
 export class EscherStatisticsComponent implements OnChanges {
 

@@ -7,8 +7,7 @@ import 'rxjs/add/operator/startWith';
 
 @Component({
   selector: 'app-theme-selector',
-  templateUrl: './theme-selector.component.html',
-  styleUrls: ['./theme-selector.component.css'],
+  templateUrl: './theme-selector.component.html'
 })
 export class ThemeSelectorComponent {
   toggleTheme$: Subject<string> = new Subject<string>();
