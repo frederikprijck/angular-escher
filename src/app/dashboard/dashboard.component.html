@@ -5,7 +5,12 @@
 </div>
 
 <div class="dashboard__content" [ngClass]="themeCssClass$ | async">
-  <escher-component [data]="data$ | async" style="height: 600px; width: 80%; display: block; float: left;"></escher-component>
+  <app-selected-nodes [data]="selectedSegment$ | async"></app-selected-nodes>
+  <escher-component 
+    [data]="data$ | async" 
+    (onSegmentSelect)="segmentSelected$.next($event)"
+    style="height: 600px; width: 80%; display: block; float: left;"></escher-component>
+
   <escher-statistics [data]="data$ | async" style="max-height: 600px; overflow: scroll; width: 20%; display: block; float: left;"></escher-statistics>
 
   <div class="clear"></div>

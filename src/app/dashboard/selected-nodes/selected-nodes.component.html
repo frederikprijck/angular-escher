@@ -1,0 +1,7 @@
+<p *ngIf="data">
+    <strong>Selection:</strong> {{ data?.minNode | selectedNode }} -> {{ data?.maxNode | selectedNode }}
+</p>
+
+<p *ngIf="!data">
+    <strong>No Selection</strong>
+</p>
