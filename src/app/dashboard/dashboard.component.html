@@ -1,5 +1,9 @@
-<h1>
-  {{title}}
-</h1>
+<div class="dashboard__title">
+  <h1>
+    {{title}}
+  </h1>
+</div>
 
-<escher-component [data]="data$ | async"></escher-component>
+<div class="dashboard__content">
+  <escher-component [data]="data$ | async" style="height: 600px; width: 80%; display: block;"></escher-component>
+</div>
