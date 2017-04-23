@@ -1,0 +1,13 @@
+<div class="escher-statistics">
+    <h2>Node Types</h2>
+
+    <div *ngFor="let item of statistics.nodeTypes">
+        {{ item.nodeType }} - ({{ item.amountOfNodes }})
+    </div>
+
+    <h2>Genes in more than 1 reaction</h2>
+    
+    <div *ngFor="let item of statistics.genes">
+        {{ item.name }}
+    </div>
+</div>

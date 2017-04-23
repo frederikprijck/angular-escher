@@ -5,8 +5,11 @@
 </div>
 
 <div class="dashboard__content" [ngClass]="themeCssClass$ | async">
-  <escher-component [data]="data$ | async" style="height: 600px; width: 80%; display: block;"></escher-component>
+  <escher-component [data]="data$ | async" style="height: 600px; width: 80%; display: block; float: left;"></escher-component>
+  <escher-statistics [data]="data$ | async" style="max-height: 600px; overflow: scroll; width: 20%; display: block; float: left;"></escher-statistics>
 
+  <div class="clear"></div>
+  
   <div class="actions">
     <app-file-upload (onSelect)="fileSelected$.next($event)"></app-file-upload>
     <app-theme-selector (onSelect)="themeSelected$.next($event)"></app-theme-selector>

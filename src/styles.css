@@ -6,21 +6,25 @@ body {
     margin: 0;
 }
 
+.clear {
+    clear: both;
+}
+
 .button {
-  padding: 5px 10px;
-  background-color: #E94D4F;
-  color: #fff;
-  cursor: pointer;
-  font-size: 1em;
+    padding: 5px 10px;
+    background-color: #E94D4F;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
 }
 
 .button:hover {
-  background-color: #ad3e3f;
+    background-color: #ad3e3f;
 }
 
 button.button {
     border: none;
-  font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 
