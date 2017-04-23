@@ -32,10 +32,12 @@ export class DashboardComponent implements OnInit {
     this.selectedSegment$ = this.segmentSelected$.combineLatest(this.data$)
       .map(x => {
         const nodes = x[1][1].nodes;
-        return {
-          minNode: nodes[x[0].from_node_id],
-          maxNode: nodes[x[0].to_node_id]
-        };
+        const minNode = nodes[x[0].from_node_id];
+        const maxNode = nodes[x[0].to_node_id];
+        return minNode && maxNode ? {
+          minNode,
+          maxNode
+        } : null;
       });
   }
 }
