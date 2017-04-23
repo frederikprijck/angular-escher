@@ -2,6 +2,11 @@ escher-component {
   margin: 0 auto;
 }
 
-.dashboard__title {
+.dashboard__title, .dashboard__content {
   text-align: center;
 }
+
+.actions {
+  margin-top: 40px;
+}
+

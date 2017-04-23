@@ -6,4 +6,8 @@
 
 <div class="dashboard__content">
   <escher-component [data]="data$ | async" style="height: 600px; width: 80%; display: block;"></escher-component>
+
+  <div class="actions">
+    <app-file-upload (onSelect)="fileSelected$.next($event)"></app-file-upload>
+  </div>
 </div>
